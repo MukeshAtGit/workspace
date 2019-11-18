@@ -19,12 +19,18 @@ pipeline {
                                }
                       }
                      stage ("4") {
-                              stage ("unit test") {
+                              parallel {
+                                      stage ("unit test") {
                                                  steps {
                                                        echo "Running the unit test"
                                                        }
+                                      }
+                                      stage ("integration test") {
+                                                  steps {
+                                                      echo "running integration test"
+                                                  }
+                                      }
+                              }         
                          }                     
                     }
-                     
-                }
 }
