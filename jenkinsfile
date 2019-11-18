@@ -1,4 +1,5 @@
 /* Hello World in Groovy */
+/* Hello World in Groovy */
 pipelie {
          agent any 
                 stages {
@@ -13,20 +14,14 @@ pipelie {
                             }
                      }
                      stage("3") {
-                     when {
-                            not {
-                                   branch "master"
-                                   }
-                          }
                           steps {
                                echo "hello"
                                }
                       }
-                    
                      stage ("4") {
                               stage ("unit test") {
                                                  steps {
-                                                       echo 'Running the unit test'
+                                                       echo "Running the unit test"
                                                        }
                               stage ("integration test") {
                                                   steps {
