@@ -23,11 +23,6 @@ pipeline {
                                                  steps {
                                                        echo "Running the unit test"
                                                        }
-                              stage ("integration test") {
-                                                  steps {
-                                                      echo "running integration test"
-                                                  }
-                              }
                          }                     
                     }
                      
