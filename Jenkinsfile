@@ -1,6 +1,6 @@
 /* Hello World in Groovy */
 /* Hello World in Groovy */
-pipelie {
+pipeline {
          agent any 
                 stages {
                      stage("1") {
